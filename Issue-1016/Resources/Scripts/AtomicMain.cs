@@ -20,8 +20,8 @@ public class AtomicMain : AppDelegate
 
         foreach (var c in destVector)
         {
-            var typeName = c.TypeName;
-            if (typeName != "MyComponent")
+                
+            if (c.GetType().Name != "MyComponent" || c.TypeName != "MyComponent")
             {
                 throw new InvalidOperationException("TypeName != MyComponent");
             }
