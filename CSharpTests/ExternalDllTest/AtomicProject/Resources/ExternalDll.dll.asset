@@ -1,0 +1,53 @@
+{
+	"version": 1,
+	"guid": "9b36d7ccba43bccad11dbfe35b57e503",
+	"NETAssemblyImporter": {
+		"AssemblyJSON": {
+			"enums": [],
+			"components": [
+				{
+					"name": "ExternalDllComponent",
+					"namespace": "ExternalDll",
+					"fields": [
+						{
+							"isEnum": false,
+							"typeName": "Int32",
+							"name": "MyIntValue",
+							"defaultValue": null,
+							"caPos": [
+								""
+							],
+							"caNamed": {}
+						}
+					]
+				},
+				{
+					"name": "ExternalDllDerivedComponent",
+					"namespace": "ExternalDll",
+					"fields": [
+						{
+							"isEnum": false,
+							"typeName": "Int32",
+							"name": "MyIntValue",
+							"defaultValue": null,
+							"caPos": [
+								""
+							],
+							"caNamed": {}
+						},
+						{
+							"isEnum": false,
+							"typeName": "Single",
+							"name": "MyFloatValue",
+							"defaultValue": null,
+							"caPos": [
+								""
+							],
+							"caNamed": {}
+						}
+					]
+				}
+			]
+		}
+	}
+}
