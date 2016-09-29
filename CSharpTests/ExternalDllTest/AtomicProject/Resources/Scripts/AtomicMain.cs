@@ -19,7 +19,7 @@ public class AtomicMain : AppDelegate
         Assert(defaultDllComponent != null, "Could not get DefaultDllDerivedComponent with GetCSComponent");
         var defaultDllComponents = new Vector<DefaultDllComponent>();
         scene.GetDerivedCSComponents(defaultDllComponents, true);
-        Assert(defaultDllComponents.Count < 2, "Could not get all DefaultDllComponents with GetDerivedCSComponents");
+        Assert(defaultDllComponents.Count >= 2, "Could not get all DefaultDllComponents with GetDerivedCSComponents");
 
         var externalDllComponent = scene.GetCSComponent<ExternalDllComponent>(true);
         Assert(externalDllComponent != null, "Could not get ExternalDllComponent with GetCSComponent");
@@ -27,7 +27,7 @@ public class AtomicMain : AppDelegate
         Assert(externalDllDerivedComponent != null, "Could not get ExternalDllDerivedComponent with GetCSComponent");
         var externalDllComponents = new Vector<ExternalDllComponent>();
         scene.GetDerivedCSComponents(externalDllComponents, true);
-        Assert(externalDllComponents.Count < 2, "Could not get all ExternalDllComponents with GetDerivedCSComponents");
+        Assert(externalDllComponents.Count >= 2, "Could not get all ExternalDllComponents with GetDerivedCSComponents");
     }
 
     private static void Assert(bool test, string message)
