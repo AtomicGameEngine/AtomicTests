@@ -9,9 +9,6 @@ public class AtomicMain : AppDelegate
 {
     public override void Start()
     {
-        var assembly = AtomicNET.GetSubsystem<ResourceCache>().GetResource<CSComponentAssembly>("ExternalDll.dll");
-        Assert(assembly != null, "Could not load External.dll");
-
         Scene scene = AtomicNET.GetSubsystem<Player>().LoadScene("Scenes/Scene.scene");
 
         // Test the ability to get instances of components from default and external dlls
