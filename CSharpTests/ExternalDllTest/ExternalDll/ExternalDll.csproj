@@ -34,12 +34,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .NET Framework is automatically included -->
-    <ProjectReference Include="..\AtomicProject\AtomicNET\Solution\AtomicNET\AtomicNET.csproj">
-      <Project>{c74a8ecd-7517-11e6-9b0e-005056c00008}</Project>
-      <Name>AtomicNET</Name>
-      <Private>False</Private>
-    </ProjectReference>
+    <Reference Include="AtomicNET">
+         <HintPath Condition="'$(Configuration)' == 'Release'">../AtomicProject/AtomicNET/Lib/Portable/AtomicNET.dll</HintPath>
+         <HintPath Condition="'$(Configuration)' == 'Debug'">../AtomicProject/AtomicNET/Lib/Portable/AtomicNET.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExternalDllComponent.cs" />
@@ -47,7 +45,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
