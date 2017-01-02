@@ -1,6 +1,7 @@
 ### AtomicGameEngine files ###
 AtomicNET/*
 Cache/*
+Resources/MemoryLeaks.*
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and

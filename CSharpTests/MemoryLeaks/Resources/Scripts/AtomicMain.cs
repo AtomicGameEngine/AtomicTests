@@ -31,10 +31,13 @@ public class AtomicMain : AppDelegate
 
         view.AddChild(layout);
 
+        CreateSceneLoadButton("Clear");
         CreateSceneLoadButton("Empty");
         CreateSceneLoadButton("Scene");
 
-        //AtomicNET.GetSubsystem<Player>().LoadScene("Scenes/Scene.scene");
+        // Setup debug hud to display metrics
+        GetSubsystem<UI>().ShowDebugHud(true);
+        GetSubsystem<UI>().SetDebugHudProfileMode(DebugHudProfileMode.DEBUG_HUD_PROFILE_METRICS);
     }
 
     private void CreateSceneLoadButton(string sceneName)
@@ -50,16 +53,16 @@ public class AtomicMain : AppDelegate
         {
             if (eventData.Type == UI_EVENT_TYPE.UI_EVENT_TYPE_CLICK)
             {
-                //view.Remove();
-                if (currentScene != null)
-                {
-                    currentScene.RemoveAllChildren();
-                }
+                var player = AtomicNET.GetSubsystem<Player>();
+
+                player.UnloadAllScenes();
+
                 currentScene = null;
                 GetSubsystem<ResourceCache>().ReleaseAllResources(true);
                 System.GC.Collect();
 
-                currentScene = AtomicNET.GetSubsystem<Player>().LoadScene("Scenes/"+ sceneName + ".scene");
+                if (sceneName != "Clear")
+                    currentScene = AtomicNET.GetSubsystem<Player>().LoadScene("Scenes/"+ sceneName + ".scene");
             }
         });
 

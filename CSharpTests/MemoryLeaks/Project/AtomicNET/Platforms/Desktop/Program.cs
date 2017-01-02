@@ -12,6 +12,9 @@ namespace AtomicPlayer
     {
         public static void Main(string[] args)
         {
+            // Capture all metrics, including engine subsystems, etc
+            // Application.SetAutoMetrics(true);
+
             Application.Run<AtomicMain>(args);
         }
     }
