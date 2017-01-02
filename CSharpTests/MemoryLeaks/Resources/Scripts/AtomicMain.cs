@@ -74,8 +74,7 @@ public class AtomicMain : AppDelegate
                     player.UnloadAllScenes();
                 }
 
-                // TODO: Resource Metrics
-                // GetSubsystem<ResourceCache>().ReleaseAllResources(true);
+                GetSubsystem<ResourceCache>().ReleaseAllResources(true);
 
                 System.GC.Collect();
 
