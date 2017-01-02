@@ -55,14 +55,30 @@ public class AtomicMain : AppDelegate
             {
                 var player = AtomicNET.GetSubsystem<Player>();
 
-                player.UnloadAllScenes();
-
-                currentScene = null;
-                GetSubsystem<ResourceCache>().ReleaseAllResources(true);
-                System.GC.Collect();
 
                 if (sceneName != "Clear")
-                    currentScene = AtomicNET.GetSubsystem<Player>().LoadScene("Scenes/"+ sceneName + ".scene");
+                {
+                    if (currentScene != null)
+                    {
+                        // This tests that CSComponents (and other components) and cleaned up when keeping scene, though removing all the nodes
+                        currentScene.RemoveAllChildren();
+                    }
+
+                    currentScene = player.LoadScene("Scenes/" + sceneName + ".scene");
+                    player.SetCurrentScene(currentScene);
+
+                }
+                else
+                {
+                    currentScene = null;
+                    player.UnloadAllScenes();
+                }
+
+                // TODO: Resource Metrics
+                // GetSubsystem<ResourceCache>().ReleaseAllResources(true);
+
+                System.GC.Collect();
+
             }
         });
 
