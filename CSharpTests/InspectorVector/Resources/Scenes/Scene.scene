@@ -5,8 +5,8 @@
 	<attribute name="Smoothing Constant" value="50" />
 	<attribute name="Snap Threshold" value="5" />
 	<attribute name="Elapsed Time" value="0" />
-	<attribute name="Next Replicated Node ID" value="382" />
-	<attribute name="Next Replicated Component ID" value="1996" />
+	<attribute name="Next Replicated Node ID" value="384" />
+	<attribute name="Next Replicated Component ID" value="1998" />
 	<attribute name="Next Local Node ID" value="16778496" />
 	<attribute name="Next Local Component ID" value="16777216" />
 	<attribute name="Variables" />
@@ -64,13 +64,7 @@
 		<attribute name="Rotation" value="1 0 0 0" />
 		<attribute name="Scale" value="1 1 1" />
 		<attribute name="Variables" />
-		<component type="StaticModel" id="1975">
-			<attribute name="Model" value="Model;2788364e8ff6f81f4b566a9d58e3fb5b.mdl" />
-			<attribute name="Material" value="Material;Models/Materials/DefaultMaterial.material" />
-			<attribute name="Geometry Enabled">
-				<variant type="Bool" value="true" />
-			</attribute>
-		</component>
+		<component type="StaticModel" id="1975" />
 		<component type="CSComponent" id="1978">
 			<attribute name="Class" value="ArrayTest" />
 			<attribute name="FieldValues">
@@ -112,6 +106,63 @@
 					<variant type="String" value="to" />
 					<variant type="String" value="the" />
 					<variant type="String" value="Vector Inspector!" />
+				</variant>
+				<variant hash="1455437532" type="VariantVector">
+					<variant type="ResourceRef" value="Model;2788364e8ff6f81f4b566a9d58e3fb5b.mdl" />
+					<variant type="ResourceRef" value=";" />
+				</variant>
+				<variant hash="390508102" type="VariantVector">
+					<variant type="ResourceRef" value="Material;Models/Materials/DefaultMaterial.material" />
+					<variant type="ResourceRef" value=";" />
+				</variant>
+				<variant hash="1870103666" type="VariantVector">
+					<variant type="Bool" value="false" />
+					<variant type="Bool" value="false" />
+				</variant>
+				<variant hash="3457041224" type="VariantVector">
+					<variant type="Int" value="0" />
+					<variant type="Int" value="0" />
+					<variant type="Int" value="0" />
+				</variant>
+				<variant hash="52604220" type="VariantVector">
+					<variant type="Float" value="0" />
+					<variant type="Float" value="0" />
+					<variant type="Float" value="0" />
+					<variant type="Float" value="0" />
+				</variant>
+				<variant hash="2961058123" type="VariantVector">
+					<variant type="String" value="" />
+					<variant type="String" value="" />
+				</variant>
+				<variant hash="2728265300" type="VariantVector">
+					<variant type="Color" value="1 1 1 1" />
+					<variant type="Color" value="1 1 1 1" />
+					<variant type="Color" value="1 1 1 1" />
+				</variant>
+				<variant hash="1311023945" type="VariantVector">
+					<variant type="Vector2" value="0 0" />
+					<variant type="Vector2" value="0 0" />
+					<variant type="Vector2" value="0 0" />
+					<variant type="Vector2" value="0 0" />
+				</variant>
+				<variant hash="3410020998" type="VariantVector">
+					<variant type="Vector3" value="0 0 0" />
+					<variant type="Vector3" value="0 0 0" />
+				</variant>
+				<variant hash="3934227792" type="VariantVector">
+					<variant type="Float" value="0" />
+					<variant type="Float" value="0" />
+				</variant>
+				<variant hash="4036211689" type="VariantVector">
+					<variant type="Color" value="1 1 1 1" />
+					<variant type="Color" value="1 1 1 1" />
+					<variant type="Color" value="1 1 1 1" />
+				</variant>
+				<variant hash="3803325411" type="VariantVector">
+					<variant type="ResourceRef" value=";" />
+					<variant type="ResourceRef" value=";" />
+					<variant type="ResourceRef" value=";" />
+					<variant type="ResourceRef" value=";" />
 				</variant>
 			</attribute>
 		</component>
