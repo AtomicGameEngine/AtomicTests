@@ -5,8 +5,8 @@
 	<attribute name="Smoothing Constant" value="50" />
 	<attribute name="Snap Threshold" value="5" />
 	<attribute name="Elapsed Time" value="0" />
-	<attribute name="Next Replicated Node ID" value="379" />
-	<attribute name="Next Replicated Component ID" value="1993" />
+	<attribute name="Next Replicated Node ID" value="382" />
+	<attribute name="Next Replicated Component ID" value="1996" />
 	<attribute name="Next Local Node ID" value="16778496" />
 	<attribute name="Next Local Component ID" value="16777216" />
 	<attribute name="Variables" />
@@ -60,7 +60,7 @@
 		<attribute name="Is Enabled" value="true" />
 		<attribute name="Name" value="Chest" />
 		<attribute name="Tags" />
-		<attribute name="Position" value="0 -0.199291 2" />
+		<attribute name="Position" value="0 -0.167564 2" />
 		<attribute name="Rotation" value="1 0 0 0" />
 		<attribute name="Scale" value="1 1 1" />
 		<attribute name="Variables" />
@@ -74,48 +74,44 @@
 		<component type="CSComponent" id="1978">
 			<attribute name="Class" value="ArrayTest" />
 			<attribute name="FieldValues">
-				<variant hash="2272599068" type="VariantVector">
-					<variant type="Color" value="1 0 1 1" />
-					<variant type="Color" value="1 1 1 1" />
-					<variant type="Color" value="0 0 1 1" />
-					<variant type="Color" value="1 1 0 1" />
-				</variant>
-				<variant hash="4248395876" type="VariantVector">
-					<variant type="Vector3" value="0 1 0" />
-					<variant type="Vector3" value="3 8 0" />
-					<variant type="Vector3" value="0 -2 6" />
-				</variant>
 				<variant hash="3926622883" type="VariantVector">
 					<variant type="Bool" value="true" />
 					<variant type="Bool" value="false" />
+					<variant type="Bool" value="true" />
+					<variant type="Bool" value="true" />
 				</variant>
 				<variant hash="3943230166" type="VariantVector">
-					<variant type="Int" value="0" />
-					<variant type="Int" value="0" />
-				</variant>
-				<variant hash="2646773171" type="VariantVector">
-					<variant type="Int" value="0" />
-					<variant type="Int" value="0" />
+					<variant type="Int" value="5" />
+					<variant type="Int" value="4" />
+					<variant type="Int" value="3" />
+					<variant type="Int" value="2" />
+					<variant type="Int" value="1" />
 				</variant>
 				<variant hash="1586339913" type="VariantVector">
-					<variant type="Float" value="0" />
-					<variant type="Float" value="0" />
+					<variant type="Float" value="6.1" />
+					<variant type="Float" value="5.2" />
+					<variant type="Float" value="4.3" />
+					<variant type="Float" value="10" />
+					<variant type="Float" value="15" />
+					<variant type="Float" value="50" />
 				</variant>
 				<variant hash="1688323810" type="VariantVector">
-					<variant type="Color" value="0.147694 0.856228 0.251117 1" />
-					<variant type="Color" value="0.509349 0.551514 0.467183 1" />
+					<variant type="Color" value="1 1 0 1" />
+					<variant type="Color" value="1 0 1 1" />
 				</variant>
 				<variant hash="1135402966" type="VariantVector">
-					<variant type="Vector2" value="0 0" />
-					<variant type="Vector2" value="0 0" />
+					<variant type="Vector2" value="4 3" />
+					<variant type="Vector2" value="2 1" />
 				</variant>
 				<variant hash="1507410197" type="VariantVector">
-					<variant type="Vector3" value="10 0 0" />
-					<variant type="Vector3" value="0 50 0" />
+					<variant type="Vector3" value="1 2 3" />
+					<variant type="Vector3" value="6 5 4" />
 				</variant>
 				<variant hash="1024728828" type="VariantVector">
-					<variant type="String" value="This is" />
-					<variant type="String" value="a Test" />
+					<variant type="String" value="Welcome" />
+					<variant type="String" value="to" />
+					<variant type="String" value="the" />
+					<variant type="String" value="Vector Inspector!" />
 				</variant>
 			</attribute>
 		</component>
