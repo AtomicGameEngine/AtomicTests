@@ -5,26 +5,65 @@ using System.Linq;
 public class ArrayTest : CSComponent
 {
 
+    [Inspector(ArraySize = 2)]
+    Model[] MyModelArray;
+
+    [Inspector(ArraySize = 2)]
+    Material[] MyMaterialArray;
+
     [Inspector]
+    float[] MyDynamicFloatArray;
+
+    [Inspector]
+    Color[] MyDynamicColorArray;
+
+    [Inspector]
+    Model[] MyDynamicModelArray;
+
+    // value checks
+    [Inspector(ArraySize = 4)]
     bool[] MyBoolArray;
 
-    [Inspector]
+    [Inspector(ArraySize = 5)]
     int[] MyIntArray;
 
-    [Inspector]
+    [Inspector(ArraySize = 6)]
     float[] MyFloatArray;
 
-    [Inspector]
+    [Inspector(ArraySize = 4)]
     string[] MyStringArray;
 
-    [Inspector]
+    [Inspector(ArraySize=2)]
     Color[] MyColorArray;
 
-    [Inspector]
+    [Inspector(ArraySize = 2)]
     Vector2[] MyVector2Array;
 
-    [Inspector]
+    [Inspector(ArraySize = 2)]
     Vector3[] MyVector3Array;
+
+    // default checks
+    [Inspector(ArraySize =2)]
+    bool[] MyDefault2BoolArray;
+
+    [Inspector(ArraySize = 3)]
+    int[] MyDefault3IntArray;
+
+    [Inspector(ArraySize = 4)]
+    float[] MyDefault4FloatArray;
+
+    [Inspector(ArraySize = 2)]
+    string[] MyDefault2StringArray;
+
+    [Inspector(ArraySize = 3)]
+    Color[] MyDefault3ColorArray;
+
+    [Inspector(ArraySize = 4)]
+    Vector2[] MyDefault4Vector2Array;
+
+    [Inspector(ArraySize = 2)]
+    Vector3[] MyDefault2Vector3Array;
+
 
     bool[] CheckBoolArray;
 
@@ -40,10 +79,15 @@ public class ArrayTest : CSComponent
 
     Vector3[] CheckVector3Array;
 
-    // TODO resource/node arrays
+    // TODO node arrays
 
     void Start()
     {
+        var staticModel = GetComponent<StaticModel>();
+
+        staticModel.Model = MyModelArray[0];
+        staticModel.Material = MyMaterialArray[0];
+
         CheckBoolArray = new bool[4];
         CheckBoolArray[0] = true;
         CheckBoolArray[1] = false;
