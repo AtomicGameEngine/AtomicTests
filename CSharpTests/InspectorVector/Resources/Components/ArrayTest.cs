@@ -100,6 +100,9 @@ public class ArrayTest : CSComponent
         staticModel.Model = MyModelArray[0];
         staticModel.Material = MyMaterialArray[0];
 
+        if (MyDynamicStringArray.Length != 2 || MyDynamicStringArray[0] != "Test" || MyDynamicStringArray[1] != "Dynamic String")
+            Error("Bad MyDynamicStringArray values");
+
         CheckBoolArray = new bool[4];
         CheckBoolArray[0] = true;
         CheckBoolArray[1] = false;
