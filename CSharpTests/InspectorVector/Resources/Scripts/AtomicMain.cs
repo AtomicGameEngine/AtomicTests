@@ -5,7 +5,7 @@ public class AtomicMain : AppDelegate
 {
     public override void Start()
     {
-        AtomicNET.GetSubsystem<Player>().LoadScene("Scenes/Scene.scene");
+        var scene = AtomicNET.GetSubsystem<Player>().LoadScene("Scenes/Scene.scene");
     }
 
 }
