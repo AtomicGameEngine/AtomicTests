@@ -15,6 +15,9 @@ public class ArrayTest : CSComponent
     float[] MyDynamicFloatArray;
 
     [Inspector]
+    string[] MyDynamicStringArray;
+
+    [Inspector]
     Color[] MyDynamicColorArray;
 
     [Inspector]
@@ -83,6 +86,15 @@ public class ArrayTest : CSComponent
 
     void Start()
     {
+        if (MyDynamicFloatArray == null)
+            Error("MyDynamicFloatArray is null");
+        if (MyDynamicColorArray == null)
+            Error("MyDynamicColorArray is null");
+        if (MyDynamicModelArray == null)
+            Error("MyDynamicModelArray is null");
+        if (MyDynamicStringArray == null)
+            Error("MyDynamicStringArray is null");
+
         var staticModel = GetComponent<StaticModel>();
 
         staticModel.Model = MyModelArray[0];
@@ -126,7 +138,6 @@ public class ArrayTest : CSComponent
         CheckVector3Array = new Vector3[2];
         CheckVector3Array[0] = new Vector3(1, 2, 3);
         CheckVector3Array[1] = new Vector3(6, 5, 4);
-
     }
 
     void Update(float timeStep)
@@ -153,9 +164,9 @@ public class ArrayTest : CSComponent
             Error();
     }
 
-    void Error()
+    void Error(string error = "Mismatch in array data")
     {
-        throw new Exception("Mismatch in array data");
+        throw new Exception(error);
     }
 
 }
