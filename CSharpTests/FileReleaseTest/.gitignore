@@ -1,7 +1,7 @@
 ### AtomicGameEngine files ###
 AtomicNET/*
 Cache/*
-Resources/SceneResourcesTest.*
+Resources/FileReleaseTest.*
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and
