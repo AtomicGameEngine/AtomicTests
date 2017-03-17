@@ -8,7 +8,8 @@ public class AtomicMain : AppDelegate
     float switchTime = 2.0f;
 
     int currentScene = 0;
-    string[] scenes = { "Scene", "Scene2", "EmptyScene" };
+    string[] scenes = { "Scene", "Scene2", "EmptyScene", "" };
+    Scene scene;
 
     public override void Start()
     {
@@ -28,7 +29,7 @@ public class AtomicMain : AppDelegate
 
             if (switchTime <= 0.0f)
             {
-                switchTime = 5.0f;
+                switchTime = 10.0f;
 
                 switchScene();
             }
@@ -40,12 +41,17 @@ public class AtomicMain : AppDelegate
     {
         var player = GetSubsystem<Player>();
 
+        //scene = null; // uncomment for no leaks
         player.UnloadAllScenes();
+        scene = null;
 
         // unload resources from cache
         GetSubsystem<ResourceCache>().ReleaseAllResources(false);
 
-        player.LoadScene("Scenes/" + scenes[currentScene++] + ".scene");
+        string sceneName = scenes[currentScene++];
+
+        if (!string.IsNullOrEmpty(sceneName))
+            scene = player.LoadScene("Scenes/" + sceneName + ".scene");
 
         currentScene %= scenes.Length;
 
