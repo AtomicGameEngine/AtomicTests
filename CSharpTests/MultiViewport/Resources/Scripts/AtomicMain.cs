@@ -34,8 +34,6 @@ public class AtomicMain : AppDelegate
             UIView view = new UIView();
             UILayout layout = new UILayout()
             {
-                // NOTE: enums should be renamed, for example UI_LAYOUT_POSITION.RIGHT_BUTTON 
-
                 // See for a layout cheatsheet: https://github.com/AtomicGameEngine/AtomicGameEngine/wiki/Turbobadger-Layout-Cheat-Sheet
 
                 // Specifies which y position widgets in a AXIS_X layout should have, or which x position widgets in a AXIS_Y layout should have.
