@@ -34,9 +34,16 @@ public class AtomicMain : AppDelegate
             UIView view = new UIView();
             UILayout layout = new UILayout()
             {
+                // NOTE: enums should be renamed, for example UI_LAYOUT_POSITION.RIGHT_BUTTON 
+
+                // See for a layout cheatsheet: https://github.com/AtomicGameEngine/AtomicGameEngine/wiki/Turbobadger-Layout-Cheat-Sheet
+
+                // Specifies which y position widgets in a AXIS_X layout should have, or which x position widgets in a AXIS_Y layout should have.
                 LayoutPosition = UI_LAYOUT_POSITION.UI_LAYOUT_POSITION_RIGHT_BOTTOM,
-                //LayoutPosition = UI_LAYOUT_POSITION.UI_LAYOUT_POSITION_GRAVITY,
-                //Gravity = UI_GRAVITY.UI_GRAVITY_LEFT,
+
+                // Specifies how widgets should be moved horizontally in a AXIS_X layout(or vertically in a AXIS_Y layout) if there is extra space available.
+                LayoutDistributionPosition = UI_LAYOUT_DISTRIBUTION_POSITION.UI_LAYOUT_DISTRIBUTION_POSITION_RIGHT_BOTTOM,
+            
                 Rect = viewport.Rect
             };
             layout.AddChild(new UITextField()
