@@ -5,8 +5,8 @@
 	<attribute name="Smoothing Constant" value="50" />
 	<attribute name="Snap Threshold" value="5" />
 	<attribute name="Elapsed Time" value="0" />
-	<attribute name="Next Replicated Node ID" value="368" />
-	<attribute name="Next Replicated Component ID" value="1981" />
+	<attribute name="Next Replicated Node ID" value="371" />
+	<attribute name="Next Replicated Component ID" value="1985" />
 	<attribute name="Next Local Node ID" value="16778496" />
 	<attribute name="Next Local Component ID" value="16777216" />
 	<attribute name="Variables" />
@@ -73,6 +73,13 @@
 		</component>
 		<component type="CSComponent" id="1979">
 			<attribute name="Class" value="Spinner" />
+		</component>
+		<component type="CSComponent" id="1982">
+			<attribute name="Class" value="TextureReplacer" />
+			<attribute name="FieldValues">
+				<variant name="texturePath" type="String" value="checkerboard.png" />
+				<variant name="instanceMaterial" type="Bool" value="false" />
+			</attribute>
 		</component>
 	</node>
 </scene>

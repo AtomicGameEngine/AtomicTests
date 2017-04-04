@@ -11,7 +11,6 @@ public class AtomicMain : AppDelegate
     int currentScene = 0;
     string[] scenes = { "", "Scene", "", "Scene2" };
     Scene scene;
-    bool replaceTexture;
 
     public override void Start()
     {
@@ -23,6 +22,7 @@ public class AtomicMain : AppDelegate
         ui.SetDebugHudProfileMode(DebugHudProfileMode.DEBUG_HUD_PROFILE_METRICS);
         ui.ShowDebugHud(true);
         ui.DebugHudRefreshInterval = 0.1f;
+        GetSubsystem<Metrics>().Enable();
 
         switchScene();
 
@@ -56,30 +56,10 @@ public class AtomicMain : AppDelegate
         if (!string.IsNullOrEmpty(sceneName))
         {
             scene = player.LoadScene("Scenes/" + sceneName + ".scene");
-            ReplaceTexture();
         }
 
         currentScene %= scenes.Length;
 
-    }
-
-    void ReplaceTexture()
-    {
-        if (replaceTexture)
-        {
-            StaticModel model = scene.GetComponent<StaticModel>(true);
-            if (model != null)
-            {
-                ResourceCache cache = GetSubsystem<ResourceCache>();
-                Texture2D texture = cache.GetResource<Texture2D>("checkerboard.png");
-                Material material = model.GetMaterial(0);
-                if (texture != null && material != null)
-                {
-                    material.SetTexture(TextureUnit.TU_DIFFUSE, texture);
-                }
-            }
-        }
-        replaceTexture = !replaceTexture;
     }
 
     void AddExternalResourcesPathToCache()
