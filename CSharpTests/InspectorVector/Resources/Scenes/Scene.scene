@@ -150,7 +150,7 @@
 					<variant type="Vector3" value="0 0 0" />
 				</variant>
 				<variant hash="3934227792" type="VariantVector">
-					<variant type="Float" value="0" />
+					<variant type="Float" value="1" />
 					<variant type="Float" value="0" />
 				</variant>
 				<variant hash="4036211689" type="VariantVector">
