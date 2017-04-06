@@ -4,8 +4,9 @@ using AtomicEngine;
 
 public class PrefabLoader : CSComponent
 {
+
     [Inspector]
-    private string prefabPath;
+    public string prefabPath;
 
     public void Start()
     {

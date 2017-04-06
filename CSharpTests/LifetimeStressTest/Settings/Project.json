@@ -1,0 +1,6 @@
+{
+  "name": "LifetimeStressTest",
+  "platforms": [
+    "desktop"
+  ]
+}
