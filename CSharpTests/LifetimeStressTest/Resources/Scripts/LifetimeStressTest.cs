@@ -2,13 +2,18 @@
 using System;
 using System.Collections.Generic;
 using AtomicEngine;
+using AtomicPlayer;
 
 
 class LifetimeStressTest : NETScriptObject
 {
-    public LifetimeStressTest()
+    public LifetimeStressTest(bool testTearDown = false)
     {
+        teardown = testTearDown;
+
         SubscribeToEvent<UpdateEvent>(this.Update);
+
+        switchScene();
 
 #if DEBUG
         Log.Warn("This stress test instantiates many objects, and tests lifetime issues, running in Release build for managed and native is recommended");
@@ -21,6 +26,8 @@ class LifetimeStressTest : NETScriptObject
     static readonly float CYCLE_TIME = 0.5f;
     static readonly Random random = new Random();
 
+    static bool teardown = false;
+
     void Update(UpdateEvent ev)
     {
         cycleDelta -= ev.TimeStep;
@@ -29,9 +36,18 @@ class LifetimeStressTest : NETScriptObject
         {
             cycleDelta = CYCLE_TIME;
 
-            RunCycle();
+            if (!teardown)
+                RunCycle();
         }
-        
+
+        switchTime -= ev.TimeStep;
+
+        if (switchTime <= 0.0f)
+        {
+            switchTime = 10.0f;
+
+            switchScene();
+        }
     }
 
     List<Scene> scenes = new List<Scene>();
@@ -91,6 +107,37 @@ class LifetimeStressTest : NETScriptObject
                 scenes.Remove(scene);
                 scene.Dispose();
             }
+
         }        
     }
+
+    void switchScene()
+    {
+        var player = GetSubsystem<Player>();
+
+        player.UnloadAllScenes();
+        scene = null;
+
+        // unload resources from cache
+        GetSubsystem<ResourceCache>().ReleaseAllResources(false);
+
+        string sceneName = loadScenes[currentScene++];
+
+        if (!string.IsNullOrEmpty(sceneName))
+        {
+            scene = player.LoadScene("Scenes/" + sceneName + ".scene");
+        }
+
+        currentScene %= loadScenes.Length;
+
+    }
+
+    // scene switch time in seconds
+    float switchTime = 5.0f;
+
+    int currentScene = 0;
+    string[] loadScenes = { "", "Scene", "", "Scene2" };
+    Scene scene;
+
+
 }

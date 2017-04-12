@@ -1,17 +1,9 @@
 using System.IO;
 
 using AtomicEngine;
-using AtomicPlayer;
 
 public class AtomicMain : AppDelegate
 {
-    // scene switch time in seconds
-    float switchTime = 5.0f;
-
-    int currentScene = 0;
-    string[] scenes = { "", "Scene", "", "Scene2" };
-    Scene scene;
-
     LifetimeStressTest stressTest;
 
     public override void Start()
@@ -34,43 +26,9 @@ public class AtomicMain : AppDelegate
             GetSubsystem<Metrics>().Enable();
         }
 
-        stressTest = new LifetimeStressTest();
-
-        switchScene();
-
-        SubscribeToEvent<UpdateEvent>(e =>
-        {
-
-            switchTime -= e.TimeStep;
-
-            if (switchTime <= 0.0f)
-            {
-                switchTime = 10.0f;
-
-                switchScene();
-            }
-
-        });
-    }
-
-    void switchScene()
-    {
-        var player = GetSubsystem<Player>();
-
-        player.UnloadAllScenes();
-        scene = null;
-
-        // unload resources from cache
-        GetSubsystem<ResourceCache>().ReleaseAllResources(false);
-
-        string sceneName = scenes[currentScene++];
-
-        if (!string.IsNullOrEmpty(sceneName))
-        {
-            scene = player.LoadScene("Scenes/" + sceneName + ".scene");
-        }
-
-        currentScene %= scenes.Length;
+        // the stress test can be run in "tear down" mode by passing true to constuctor
+        // tear down mode is a sequential scene/resource load/unload test, without the GC/lifetime churn test
+        stressTest = new LifetimeStressTest(false);
 
     }
 
@@ -84,5 +42,7 @@ public class AtomicMain : AppDelegate
 
         cache.AddResourceDir(externalResourcesDir);
     }
+
+
 
 }
