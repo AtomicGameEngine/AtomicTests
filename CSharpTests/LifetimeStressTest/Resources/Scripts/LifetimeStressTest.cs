@@ -52,6 +52,8 @@ class LifetimeStressTest : NETScriptObject
 
     List<Scene> scenes = new List<Scene>();
 
+    static bool unloadAllScenesOnCycle = false;
+
     void RunCycle()
     {
         Log.Info("LifetimeStressTest: Running Cycle");
@@ -94,6 +96,9 @@ class LifetimeStressTest : NETScriptObject
             // remove up to 10 scenes
             var numScenes = random.Next(10) + 1;
 
+            if (unloadAllScenesOnCycle)
+                numScenes = scenes.Count;
+
             var msg = "LifetimeStressTest: Removing " + numScenes + " scenes";
 
             if (metrics.Enabled)
@@ -104,9 +109,29 @@ class LifetimeStressTest : NETScriptObject
             for (int i = 0; i < numScenes; i++)
             {
                 scene = scenes[random.Next(scenes.Count)];
+
+                // Randomly destroy some children
+                var children = new Vector<Node>();
+                scene.GetChildren(children, true);
+
+                for (int j = 0; j < 200; j++)
+                {
+                    var child = children[random.Next(children.Count)];
+                    child.Destroy();
+
+                }
+
+                children.Clear();
                 scenes.Remove(scene);
-                scene.Dispose();
+                scene.Destroy();
             }
+
+            // unload resources from cache
+            GetSubsystem<ResourceCache>().ReleaseAllResources(false);
+
+
+            Log.Info(numScenes + "Scenes Destroyed");
+        
 
         }        
     }
