@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<scene id="1">
+	<attribute name="Name" value="" />
+	<attribute name="Time Scale" value="1" />
+	<attribute name="Smoothing Constant" value="50" />
+	<attribute name="Snap Threshold" value="5" />
+	<attribute name="Elapsed Time" value="0" />
+	<attribute name="Next Replicated Node ID" value="390" />
+	<attribute name="Next Replicated Component ID" value="2003" />
+	<attribute name="Next Local Node ID" value="16778496" />
+	<attribute name="Next Local Component ID" value="16777216" />
+	<attribute name="Variables" />
+	<attribute name="Variable Names" value="" />
+	<component type="PhysicsWorld" id="1" />
+	<component type="Octree" id="2" />
+	<component type="DebugRenderer" id="3">
+		<attribute name="Line Antialias" value="true" />
+	</component>
+	<node id="2">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Zone" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="Zone" id="4">
+			<attribute name="Bounding Box Min" value="-10000 -10000 -10000" />
+			<attribute name="Bounding Box Max" value="10000 10000 10000" />
+			<attribute name="Ambient Color" value="0 0 0 1" />
+		</component>
+	</node>
+	<node id="3">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="GlobalLight" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="0.888074 0.325058 -0.325058 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="Light" id="5">
+			<attribute name="Light Type" value="Directional" />
+			<attribute name="Cast Shadows" value="true" />
+			<attribute name="CSM Splits" value="10 20 50 0" />
+			<attribute name="View Size Quantize" value="1" />
+			<attribute name="View Size Minimum" value="5" />
+			<attribute name="Depth Constant Bias" value="0.00025" />
+			<attribute name="Depth Slope Bias" value="0.001" />
+		</component>
+	</node>
+	<node id="361">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Camera" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 -2" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="Camera" id="1973" />
+	</node>
+	<node id="368">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="L" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-0.565551 3.24722 7.5651" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="1981">
+			<attribute name="Model" value="Model;1c51b5733f4434f46ede353c1cc70347.mdl" />
+			<attribute name="Material" value="Material;Models/Materials/Pipe.material" />
+			<attribute name="Cast Shadows" value="true" />
+			<attribute name="Geometry Enabled">
+				<variant type="Bool" value="true" />
+			</attribute>
+		</component>
+	</node>
+	<node id="369">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="O" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0.405996 1.38633 8.27714" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="1982">
+			<attribute name="Model" value="Model;70230134270ba33da989ab6d377b0adc.mdl" />
+			<attribute name="Material" value="Material;Models/Materials/Pipe.material" />
+			<attribute name="Cast Shadows" value="true" />
+			<attribute name="Geometry Enabled">
+				<variant type="Bool" value="true" />
+			</attribute>
+		</component>
+	</node>
+	<node id="370">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="T" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-1.45589 3.55479 11.2308" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="1983">
+			<attribute name="Model" value="Model;dbd5159477cd57394cb82ddd56ad04b1.mdl" />
+			<attribute name="Material" value="Material;Models/Materials/PipeT.material" />
+			<attribute name="Geometry Enabled">
+				<variant type="Bool" value="true" />
+			</attribute>
+		</component>
+	</node>
+	<node id="371">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="U" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-3.50164 2.08425 11.378" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="1984">
+			<attribute name="Model" value="Model;3adb69e7194e6de70289c73732564c2c.mdl" />
+			<attribute name="Material" value="Material;Models/Materials/PipeU.material" />
+			<attribute name="Cast Shadows" value="true" />
+			<attribute name="Geometry Enabled">
+				<variant type="Bool" value="true" />
+			</attribute>
+		</component>
+	</node>
+	<node id="373">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Y" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-1.5329 1.50769 9.49687" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="1986">
+			<attribute name="Model" value="Model;f6c768a45362b602079f6849d7271245.mdl" />
+			<attribute name="Material" value="Material;Models/Materials/Pipe.material" />
+			<attribute name="Cast Shadows" value="true" />
+			<attribute name="Geometry Enabled">
+				<variant type="Bool" value="true" />
+			</attribute>
+		</component>
+	</node>
+	<node id="377">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Ground" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="100 1 100" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="1990">
+			<attribute name="Model" value="Model;1a073992194413b30940ce7a22a120db.mdl" />
+			<attribute name="Material" value="Material;Models/Materials/Ground.material" />
+			<attribute name="Geometry Enabled">
+				<variant type="Bool" value="true" />
+			</attribute>
+		</component>
+	</node>
+	<node id="382">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="barrier" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-0.581724 5.06163 11.131" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="1995">
+			<attribute name="Model" value="Model;98bae805609c3aa6c5744a03bac6e8a6.mdl" />
+			<attribute name="Material" value="Material;Models/Materials/_barrierdefault.material" />
+			<attribute name="Geometry Enabled">
+				<variant type="Bool" value="true" />
+			</attribute>
+		</component>
+	</node>
+	<node id="383">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="hedra" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-0.700359 3.21956 13.4899" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="1996">
+			<attribute name="Model" value="Model;3aa8eff62586e30518b0aa8c54d8ebbc.mdl" />
+			<attribute name="Material" value="Material;Models/Materials/_hedradefault.material" />
+			<attribute name="Geometry Enabled">
+				<variant type="Bool" value="true" />
+			</attribute>
+		</component>
+	</node>
+	<node id="384">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="wall" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="1.71273 1.72813 13.0522" />
+		<attribute name="Rotation" value="0.968564 0 0.248762 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="1997">
+			<attribute name="Model" value="Model;3a355752e1e005ca5c1347340669eaa7.mdl" />
+			<attribute name="Material" value="Material;Models/Materials/_walldefault.material" />
+			<attribute name="Light Mask" value="0" />
+			<attribute name="Geometry Enabled">
+				<variant type="Bool" value="true" />
+			</attribute>
+		</component>
+	</node>
+	<node id="388">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="cube" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="-4.09437 4.14204 10.6283" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="StaticModel" id="2001">
+			<attribute name="Model" value="Model;30245c0570c96a95a40e1d9f0ee2ee81.mdl" />
+			<attribute name="Material" value="Material;Models/Materials/_cubedefault.material" />
+			<attribute name="Geometry Enabled">
+				<variant type="Bool" value="true" />
+			</attribute>
+		</component>
+	</node>
+</scene>
