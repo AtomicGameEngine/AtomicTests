@@ -5,8 +5,8 @@
 	<attribute name="Smoothing Constant" value="50" />
 	<attribute name="Snap Threshold" value="5" />
 	<attribute name="Elapsed Time" value="0" />
-	<attribute name="Next Replicated Node ID" value="393" />
-	<attribute name="Next Replicated Component ID" value="2006" />
+	<attribute name="Next Replicated Node ID" value="394" />
+	<attribute name="Next Replicated Component ID" value="2007" />
 	<attribute name="Next Local Node ID" value="16778496" />
 	<attribute name="Next Local Component ID" value="16777216" />
 	<attribute name="Variables" />
@@ -101,8 +101,8 @@
 		<attribute name="Is Enabled" value="true" />
 		<attribute name="Name" value="T" />
 		<attribute name="Tags" />
-		<attribute name="Position" value="-0.401605 2.29402 11.2308" />
-		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Position" value="1.23764 1.59533 12.1558" />
+		<attribute name="Rotation" value="0.859541 0 -0.511067 0" />
 		<attribute name="Scale" value="1 1 1" />
 		<attribute name="Variables" />
 		<component type="StaticModel" id="1983">
@@ -112,6 +112,7 @@
 				<variant type="Bool" value="true" />
 			</attribute>
 			<attribute name="Lightmap" value="true" />
+			<attribute name="Lightmap Size" value="512" />
 			<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
 		</component>
 	</node>
@@ -138,7 +139,7 @@
 		<attribute name="Is Enabled" value="true" />
 		<attribute name="Name" value="Y" />
 		<attribute name="Tags" />
-		<attribute name="Position" value="-1.5329 0.549635 10.6752" />
+		<attribute name="Position" value="-1.5329 0.58768 10.6752" />
 		<attribute name="Rotation" value="1 0 0 0" />
 		<attribute name="Scale" value="1 1 1" />
 		<attribute name="Variables" />
@@ -168,7 +169,7 @@
 				<variant type="Bool" value="true" />
 			</attribute>
 			<attribute name="Lightmap" value="true" />
-			<attribute name="Lightmap Size" value="512" />
+			<attribute name="Lightmap Size" value="1024" />
 			<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
 		</component>
 	</node>
@@ -177,7 +178,7 @@
 		<attribute name="Name" value="barrier" />
 		<attribute name="Tags" />
 		<attribute name="Position" value="-5.17417 0.390517 11.131" />
-		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Rotation" value="0.94085 0 -0.338825 0" />
 		<attribute name="Scale" value="1 1 1" />
 		<attribute name="Variables" />
 		<component type="StaticModel" id="1995">
@@ -231,9 +232,9 @@
 		<attribute name="Is Enabled" value="true" />
 		<attribute name="Name" value="cube" />
 		<attribute name="Tags" />
-		<attribute name="Position" value="-4.09437 0.471635 6.73354" />
+		<attribute name="Position" value="-4.09437 0.361164 6.73354" />
 		<attribute name="Rotation" value="1 0 0 0" />
-		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Scale" value="3 3 3" />
 		<attribute name="Variables" />
 		<component type="StaticModel" id="2001">
 			<attribute name="Model" value="Model;30245c0570c96a95a40e1d9f0ee2ee81.mdl" />
@@ -242,6 +243,7 @@
 				<variant type="Bool" value="true" />
 			</attribute>
 			<attribute name="Lightmap" value="true" />
+			<attribute name="Lightmap Size" value="512" />
 			<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
 		</component>
 	</node>
