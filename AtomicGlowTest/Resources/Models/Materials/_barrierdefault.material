@@ -4,7 +4,7 @@
 	<texture unit="diffuse" name="Textures/barrier_diffuse.png" />
 	<texture unit="normal" name="Textures/barrier_normal.png" />
 	<texture unit="specular" name="Textures/barrier_specular.png" />
-	<texture unit="emissive" name="Textures/barrier_AOBake.png" />
+	<texture unit="emissive" name="Textures/Scene_Lightmap.png" />
 	<parameter name="UOffset" value="1 0 0 0" />
 	<parameter name="VOffset" value="0 1 0 0" />
 	<parameter name="MatDiffColor" value="1 1 1 1" />
