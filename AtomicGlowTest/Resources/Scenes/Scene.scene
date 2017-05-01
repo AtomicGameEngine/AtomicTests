@@ -5,8 +5,8 @@
 	<attribute name="Smoothing Constant" value="50" />
 	<attribute name="Snap Threshold" value="5" />
 	<attribute name="Elapsed Time" value="0" />
-	<attribute name="Next Replicated Node ID" value="452" />
-	<attribute name="Next Replicated Component ID" value="2065" />
+	<attribute name="Next Replicated Node ID" value="596" />
+	<attribute name="Next Replicated Component ID" value="2202" />
 	<attribute name="Next Local Node ID" value="16778496" />
 	<attribute name="Next Local Component ID" value="16777216" />
 	<attribute name="Variables" />
@@ -16,20 +16,6 @@
 	<component type="DebugRenderer" id="3">
 		<attribute name="Line Antialias" value="true" />
 	</component>
-	<node id="2">
-		<attribute name="Is Enabled" value="true" />
-		<attribute name="Name" value="Zone" />
-		<attribute name="Tags" />
-		<attribute name="Position" value="0 0 0" />
-		<attribute name="Rotation" value="1 0 0 0" />
-		<attribute name="Scale" value="1 1 1" />
-		<attribute name="Variables" />
-		<component type="Zone" id="4">
-			<attribute name="Bounding Box Min" value="-10000 -10000 -10000" />
-			<attribute name="Bounding Box Max" value="10000 10000 10000" />
-			<attribute name="Ambient Color" value="0 0 0 1" />
-		</component>
-	</node>
 	<node id="3">
 		<attribute name="Is Enabled" value="true" />
 		<attribute name="Name" value="GlobalLight" />
@@ -39,7 +25,6 @@
 		<attribute name="Scale" value="1 1 1" />
 		<attribute name="Variables" />
 		<component type="Light" id="5">
-			<attribute name="Is Enabled" value="false" />
 			<attribute name="Light Type" value="Directional" />
 			<attribute name="Cast Shadows" value="true" />
 			<attribute name="CSM Splits" value="10 20 50 0" />
@@ -59,295 +44,803 @@
 		<attribute name="Variables" />
 		<component type="Camera" id="1973" />
 	</node>
-	<node id="368">
+	<node id="2">
 		<attribute name="Is Enabled" value="true" />
-		<attribute name="Name" value="L" />
+		<attribute name="Name" value="Zone" />
 		<attribute name="Tags" />
-		<attribute name="Position" value="-0.565551 0.749798 7.5651" />
+		<attribute name="Position" value="0 0 0" />
 		<attribute name="Rotation" value="1 0 0 0" />
 		<attribute name="Scale" value="1 1 1" />
 		<attribute name="Variables" />
-		<component type="StaticModel" id="1981">
-			<attribute name="Model" value="Model;1c51b5733f4434f46ede353c1cc70347.mdl" />
-			<attribute name="Material" value="Material;Models/Materials/PipeL.material" />
-			<attribute name="Cast Shadows" value="true" />
-			<attribute name="Geometry Enabled">
-				<variant type="Bool" value="true" />
-			</attribute>
-			<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+		<component type="Zone" id="4">
+			<attribute name="Bounding Box Min" value="-10000 -10000 -10000" />
+			<attribute name="Bounding Box Max" value="10000 10000 10000" />
+			<attribute name="Ambient Color" value="0 0 0 1" />
 		</component>
 	</node>
-	<node id="369">
+	<node id="485">
 		<attribute name="Is Enabled" value="true" />
-		<attribute name="Name" value="O" />
+		<attribute name="Name" value="Stuff" />
 		<attribute name="Tags" />
-		<attribute name="Position" value="3.79317 0.624611 8.27714" />
+		<attribute name="Position" value="0 0 0" />
 		<attribute name="Rotation" value="1 0 0 0" />
 		<attribute name="Scale" value="1 1 1" />
 		<attribute name="Variables" />
-		<component type="StaticModel" id="1982">
-			<attribute name="Model" value="Model;70230134270ba33da989ab6d377b0adc.mdl" />
-			<attribute name="Material" value="Material;Models/Materials/PipeO.material" />
-			<attribute name="Cast Shadows" value="true" />
-			<attribute name="Geometry Enabled">
-				<variant type="Bool" value="true" />
-			</attribute>
-			<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
-		</component>
+		<node id="486">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="HedgeArch" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0.320267 0.375286 9.31628" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="2 2 2" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2096">
+				<attribute name="Model" value="Model;a9f3b20f9f48a22ac74881310a7615b3.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/HedgeArch.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="487">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="L" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-0.565551 0.749798 7.5651" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2097">
+				<attribute name="Model" value="Model;1c51b5733f4434f46ede353c1cc70347.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/PipeL.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="488">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="O" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="3.79317 0.624611 8.27714" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2098">
+				<attribute name="Model" value="Model;70230134270ba33da989ab6d377b0adc.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/PipeO.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="489">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="Plane" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-0.855837 0.414431 12.8384" />
+			<attribute name="Rotation" value="0.707107 0.707107 0 0" />
+			<attribute name="Scale" value="15 15 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2099">
+				<attribute name="Model" value="Model;a8c597dff9891149af911985024c87b4.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/Ground.material" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Size" value="1024" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="490">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="StatueWithLamp" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-5.44211 2.20935 13.792" />
+			<attribute name="Rotation" value="0.053614 0 0.998562 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2100">
+				<attribute name="Model" value="Model;c955fa499ca7765ec987e26734ab345f.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/StatueLamp.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="491">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="StatueWithLamp" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="3.01594 0.448686 11.6782" />
+			<attribute name="Rotation" value="-0.291979 0 0.956425 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2101">
+				<attribute name="Model" value="Model;c955fa499ca7765ec987e26734ab345f.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/StatueLamp.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="492">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="T" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-2.83954 0.591286 11.6887" />
+			<attribute name="Rotation" value="0.859541 0 -0.511067 0" />
+			<attribute name="Scale" value="2 2 2" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2102">
+				<attribute name="Model" value="Model;dbd5159477cd57394cb82ddd56ad04b1.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/PipeT.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="493">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="U" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-6.23676 0.618232 11.378" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2103">
+				<attribute name="Model" value="Model;3adb69e7194e6de70289c73732564c2c.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/PipeU.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="494">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="Y" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-1.5329 0.58768 10.6752" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2104">
+				<attribute name="Model" value="Model;f6c768a45362b602079f6849d7271245.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/PipeY.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="495">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="barrier" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-5.17417 0.390517 11.131" />
+			<attribute name="Rotation" value="0.940849 0 -0.338825 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2105">
+				<attribute name="Model" value="Model;98bae805609c3aa6c5744a03bac6e8a6.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_barrierdefault.material" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="496">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="palm_straight" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="1.34885 0.340587 8.35821" />
+			<attribute name="Rotation" value="0.763307 0 -0.646036 0" />
+			<attribute name="Scale" value="2 2 2" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2106">
+				<attribute name="Model" value="Model;8f065eb9da3cb03bcca7a5405f671eb6.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_palm_straightdefault.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="497">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="palm_straight" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-0.564001 0.266522 11.0063" />
+			<attribute name="Rotation" value="0.763307 0 -0.646036 0" />
+			<attribute name="Scale" value="2 2 2" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2107">
+				<attribute name="Model" value="Model;8f065eb9da3cb03bcca7a5405f671eb6.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_palm_straightdefault.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="498">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="palm_straight" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="2.66143 0.266522 10.4658" />
+			<attribute name="Rotation" value="0.763307 0 -0.646036 0" />
+			<attribute name="Scale" value="2 2 2" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2108">
+				<attribute name="Model" value="Model;8f065eb9da3cb03bcca7a5405f671eb6.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_palm_straightdefault.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="499">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="cube" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="2.31836 0.30562 14.2771" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="3 3 3" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2109">
+				<attribute name="Model" value="Model;30245c0570c96a95a40e1d9f0ee2ee81.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_cubedefault.material" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="500">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="cube" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-5.37299 0.30562 14.2771" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="3 3 3" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2110">
+				<attribute name="Model" value="Model;30245c0570c96a95a40e1d9f0ee2ee81.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_cubedefault.material" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="501">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="hedra" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-0.700359 0.390998 13.4899" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2111">
+				<attribute name="Model" value="Model;3aa8eff62586e30518b0aa8c54d8ebbc.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_hedradefault.material" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="502">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="reinforced_pillar" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-3.41271 0.464848 8.10643" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2112">
+				<attribute name="Model" value="Model;594aae20c01624258db8ab6a62d0851c.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_reinforced_pillardefault.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="503">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="wall" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="2.3108 2.16558 14.3315" />
+			<attribute name="Rotation" value="0.999713 0 -0.0239446 0" />
+			<attribute name="Scale" value="0.5 0.5 0.5" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2113">
+				<attribute name="Model" value="Model;3a355752e1e005ca5c1347340669eaa7.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_walldefault.material" />
+				<attribute name="Light Mask" value="0" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="504">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="wall" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0.60019 0.374863 15.1465" />
+			<attribute name="Rotation" value="0.968565 0 0.248762 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2114">
+				<attribute name="Model" value="Model;3a355752e1e005ca5c1347340669eaa7.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_walldefault.material" />
+				<attribute name="Light Mask" value="0" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="587">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="cube" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="4.99445 0.30562 14.2771" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="3 3 3" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2193">
+				<attribute name="Model" value="Model;30245c0570c96a95a40e1d9f0ee2ee81.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_cubedefault.material" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="589">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="cube" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="2.31836 0.30562 18.0985" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="3 3 3" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2195">
+				<attribute name="Model" value="Model;30245c0570c96a95a40e1d9f0ee2ee81.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_cubedefault.material" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Size" value="600" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="592">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="cube" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-3.18011 0.30562 18.0985" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="3 3 3" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2198">
+				<attribute name="Model" value="Model;30245c0570c96a95a40e1d9f0ee2ee81.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_cubedefault.material" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Size" value="600" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="594">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="cube" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-0.541357 0.30562 18.0985" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="3 3 3" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2200">
+				<attribute name="Model" value="Model;30245c0570c96a95a40e1d9f0ee2ee81.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_cubedefault.material" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Size" value="600" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
 	</node>
-	<node id="370">
+	<node id="545">
 		<attribute name="Is Enabled" value="true" />
-		<attribute name="Name" value="T" />
+		<attribute name="Name" value="Stuff2" />
 		<attribute name="Tags" />
-		<attribute name="Position" value="-2.83954 0.591286 11.6887" />
-		<attribute name="Rotation" value="0.859541 0 -0.511067 0" />
-		<attribute name="Scale" value="2 2 2" />
-		<attribute name="Variables" />
-		<component type="StaticModel" id="1983">
-			<attribute name="Model" value="Model;dbd5159477cd57394cb82ddd56ad04b1.mdl" />
-			<attribute name="Material" value="Material;Models/Materials/PipeT.material" />
-			<attribute name="Cast Shadows" value="true" />
-			<attribute name="Geometry Enabled">
-				<variant type="Bool" value="true" />
-			</attribute>
-			<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
-		</component>
-	</node>
-	<node id="371">
-		<attribute name="Is Enabled" value="true" />
-		<attribute name="Name" value="U" />
-		<attribute name="Tags" />
-		<attribute name="Position" value="-6.23676 0.618232 11.378" />
-		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Position" value="1.305 0 7.34941" />
+		<attribute name="Rotation" value="0.707077 0 0.707136 0" />
 		<attribute name="Scale" value="1 1 1" />
 		<attribute name="Variables" />
-		<component type="StaticModel" id="1984">
-			<attribute name="Model" value="Model;3adb69e7194e6de70289c73732564c2c.mdl" />
-			<attribute name="Material" value="Material;Models/Materials/PipeU.material" />
-			<attribute name="Cast Shadows" value="true" />
-			<attribute name="Geometry Enabled">
-				<variant type="Bool" value="true" />
-			</attribute>
-			<attribute name="Lightmap" value="true" />
-			<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
-		</component>
-	</node>
-	<node id="373">
-		<attribute name="Is Enabled" value="true" />
-		<attribute name="Name" value="Y" />
-		<attribute name="Tags" />
-		<attribute name="Position" value="-1.5329 0.58768 10.6752" />
-		<attribute name="Rotation" value="1 0 0 0" />
-		<attribute name="Scale" value="1 1 1" />
-		<attribute name="Variables" />
-		<component type="StaticModel" id="1986">
-			<attribute name="Model" value="Model;f6c768a45362b602079f6849d7271245.mdl" />
-			<attribute name="Material" value="Material;Models/Materials/PipeY.material" />
-			<attribute name="Cast Shadows" value="true" />
-			<attribute name="Geometry Enabled">
-				<variant type="Bool" value="true" />
-			</attribute>
-			<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
-		</component>
-	</node>
-	<node id="382">
-		<attribute name="Is Enabled" value="true" />
-		<attribute name="Name" value="barrier" />
-		<attribute name="Tags" />
-		<attribute name="Position" value="-5.17417 0.390517 11.131" />
-		<attribute name="Rotation" value="0.94085 0 -0.338825 0" />
-		<attribute name="Scale" value="1 1 1" />
-		<attribute name="Variables" />
-		<component type="StaticModel" id="1995">
-			<attribute name="Model" value="Model;98bae805609c3aa6c5744a03bac6e8a6.mdl" />
-			<attribute name="Material" value="Material;Models/Materials/_barrierdefault.material" />
-			<attribute name="Geometry Enabled">
-				<variant type="Bool" value="true" />
-			</attribute>
-			<attribute name="Lightmap" value="true" />
-			<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
-		</component>
-	</node>
-	<node id="383">
-		<attribute name="Is Enabled" value="true" />
-		<attribute name="Name" value="hedra" />
-		<attribute name="Tags" />
-		<attribute name="Position" value="-0.700359 0.390998 13.4899" />
-		<attribute name="Rotation" value="1 0 0 0" />
-		<attribute name="Scale" value="1 1 1" />
-		<attribute name="Variables" />
-		<component type="StaticModel" id="1996">
-			<attribute name="Model" value="Model;3aa8eff62586e30518b0aa8c54d8ebbc.mdl" />
-			<attribute name="Material" value="Material;Models/Materials/_hedradefault.material" />
-			<attribute name="Geometry Enabled">
-				<variant type="Bool" value="true" />
-			</attribute>
-			<attribute name="Lightmap" value="true" />
-			<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
-		</component>
-	</node>
-	<node id="384">
-		<attribute name="Is Enabled" value="true" />
-		<attribute name="Name" value="wall" />
-		<attribute name="Tags" />
-		<attribute name="Position" value="0.60019 0.374863 15.1465" />
-		<attribute name="Rotation" value="0.968564 0 0.248762 0" />
-		<attribute name="Scale" value="1 1 1" />
-		<attribute name="Variables" />
-		<component type="StaticModel" id="1997">
-			<attribute name="Model" value="Model;3a355752e1e005ca5c1347340669eaa7.mdl" />
-			<attribute name="Material" value="Material;Models/Materials/_walldefault.material" />
-			<attribute name="Light Mask" value="0" />
-			<attribute name="Geometry Enabled">
-				<variant type="Bool" value="true" />
-			</attribute>
-			<attribute name="Lightmap" value="true" />
-			<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
-		</component>
-	</node>
-	<node id="388">
-		<attribute name="Is Enabled" value="true" />
-		<attribute name="Name" value="cube" />
-		<attribute name="Tags" />
-		<attribute name="Position" value="2.31836 0.30562 14.2771" />
-		<attribute name="Rotation" value="1 0 0 0" />
-		<attribute name="Scale" value="3 3 3" />
-		<attribute name="Variables" />
-		<component type="StaticModel" id="2001">
-			<attribute name="Model" value="Model;30245c0570c96a95a40e1d9f0ee2ee81.mdl" />
-			<attribute name="Material" value="Material;Models/Materials/_cubedefault.material" />
-			<attribute name="Geometry Enabled">
-				<variant type="Bool" value="true" />
-			</attribute>
-			<attribute name="Lightmap" value="true" />
-			<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
-		</component>
-	</node>
-	<node id="398">
-		<attribute name="Is Enabled" value="true" />
-		<attribute name="Name" value="palm_straight" />
-		<attribute name="Tags" />
-		<attribute name="Position" value="2.66143 0.266522 10.4658" />
-		<attribute name="Rotation" value="0.763307 0 -0.646036 0" />
-		<attribute name="Scale" value="2 2 2" />
-		<attribute name="Variables" />
-		<component type="StaticModel" id="2011">
-			<attribute name="Model" value="Model;8f065eb9da3cb03bcca7a5405f671eb6.mdl" />
-			<attribute name="Material" value="Material;Models/Materials/_palm_straightdefault.material" />
-			<attribute name="Cast Shadows" value="true" />
-			<attribute name="Geometry Enabled">
-				<variant type="Bool" value="true" />
-			</attribute>
-			<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
-		</component>
-	</node>
-	<node id="403">
-		<attribute name="Is Enabled" value="true" />
-		<attribute name="Name" value="Plane" />
-		<attribute name="Tags" />
-		<attribute name="Position" value="-0.855837 0.414431 12.8384" />
-		<attribute name="Rotation" value="0.707107 0.707107 0 0" />
-		<attribute name="Scale" value="15 15 1" />
-		<attribute name="Variables" />
-		<component type="StaticModel" id="2016">
-			<attribute name="Model" value="Model;a8c597dff9891149af911985024c87b4.mdl" />
-			<attribute name="Material" value="Material;Models/Materials/Ground.material" />
-			<attribute name="Geometry Enabled">
-				<variant type="Bool" value="true" />
-			</attribute>
-			<attribute name="Lightmap" value="true" />
-			<attribute name="Lightmap Size" value="512" />
-			<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
-		</component>
-	</node>
-	<node id="410">
-		<attribute name="Is Enabled" value="true" />
-		<attribute name="Name" value="StatueWithLamp" />
-		<attribute name="Tags" />
-		<attribute name="Position" value="3.01594 0.448686 11.6782" />
-		<attribute name="Rotation" value="0.291979 0 -0.956425 0" />
-		<attribute name="Scale" value="1 1 1" />
-		<attribute name="Variables" />
-		<component type="StaticModel" id="2023">
-			<attribute name="Model" value="Model;c955fa499ca7765ec987e26734ab345f.mdl" />
-			<attribute name="Material" value="Material;Models/Materials/StatueLamp.material" />
-			<attribute name="Cast Shadows" value="true" />
-			<attribute name="Geometry Enabled">
-				<variant type="Bool" value="true" />
-			</attribute>
-			<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
-		</component>
-	</node>
-	<node id="429">
-		<attribute name="Is Enabled" value="true" />
-		<attribute name="Name" value="reinforced_pillar" />
-		<attribute name="Tags" />
-		<attribute name="Position" value="-3.41271 0.464848 8.10643" />
-		<attribute name="Rotation" value="1 0 0 0" />
-		<attribute name="Scale" value="1 1 1" />
-		<attribute name="Variables" />
-		<component type="StaticModel" id="2042">
-			<attribute name="Model" value="Model;594aae20c01624258db8ab6a62d0851c.mdl" />
-			<attribute name="Material" value="Material;Models/Materials/_reinforced_pillardefault.material" />
-			<attribute name="Cast Shadows" value="true" />
-			<attribute name="Geometry Enabled">
-				<variant type="Bool" value="true" />
-			</attribute>
-			<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
-		</component>
-	</node>
-	<node id="433">
-		<attribute name="Is Enabled" value="true" />
-		<attribute name="Name" value="HedgeArch" />
-		<attribute name="Tags" />
-		<attribute name="Position" value="0.320267 0.375286 9.31628" />
-		<attribute name="Rotation" value="1 0 0 0" />
-		<attribute name="Scale" value="2 2 2" />
-		<attribute name="Variables" />
-		<component type="StaticModel" id="2046">
-			<attribute name="Model" value="Model;a9f3b20f9f48a22ac74881310a7615b3.mdl" />
-			<attribute name="Material" value="Material;Models/Materials/HedgeArch.material" />
-			<attribute name="Cast Shadows" value="true" />
-			<attribute name="Geometry Enabled">
-				<variant type="Bool" value="true" />
-			</attribute>
-			<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
-		</component>
-	</node>
-	<node id="439">
-		<attribute name="Is Enabled" value="true" />
-		<attribute name="Name" value="palm_straight" />
-		<attribute name="Tags" />
-		<attribute name="Position" value="-0.564001 0.266522 11.0063" />
-		<attribute name="Rotation" value="0.763307 0 -0.646036 0" />
-		<attribute name="Scale" value="2 2 2" />
-		<attribute name="Variables" />
-		<component type="StaticModel" id="2052">
-			<attribute name="Model" value="Model;8f065eb9da3cb03bcca7a5405f671eb6.mdl" />
-			<attribute name="Material" value="Material;Models/Materials/_palm_straightdefault.material" />
-			<attribute name="Cast Shadows" value="true" />
-			<attribute name="Geometry Enabled">
-				<variant type="Bool" value="true" />
-			</attribute>
-			<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
-		</component>
-	</node>
-	<node id="449">
-		<attribute name="Is Enabled" value="true" />
-		<attribute name="Name" value="palm_straight" />
-		<attribute name="Tags" />
-		<attribute name="Position" value="1.34885 0.340587 8.35821" />
-		<attribute name="Rotation" value="0.763307 0 -0.646036 0" />
-		<attribute name="Scale" value="2 2 2" />
-		<attribute name="Variables" />
-		<component type="StaticModel" id="2062">
-			<attribute name="Model" value="Model;8f065eb9da3cb03bcca7a5405f671eb6.mdl" />
-			<attribute name="Material" value="Material;Models/Materials/_palm_straightdefault.material" />
-			<attribute name="Cast Shadows" value="true" />
-			<attribute name="Geometry Enabled">
-				<variant type="Bool" value="true" />
-			</attribute>
-			<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
-		</component>
+		<node id="546">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="HedgeArch" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0.320267 0.375286 9.31628" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="2 2 2" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2153">
+				<attribute name="Model" value="Model;a9f3b20f9f48a22ac74881310a7615b3.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/HedgeArch.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="547">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="L" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-0.565551 0.749798 7.5651" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2154">
+				<attribute name="Model" value="Model;1c51b5733f4434f46ede353c1cc70347.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/PipeL.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="548">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="O" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="3.79317 0.624611 8.27714" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2155">
+				<attribute name="Model" value="Model;70230134270ba33da989ab6d377b0adc.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/PipeO.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="549">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="Plane" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-0.855837 0.414431 12.8384" />
+			<attribute name="Rotation" value="0.707107 0.707107 0 0" />
+			<attribute name="Scale" value="15 15 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2156">
+				<attribute name="Model" value="Model;a8c597dff9891149af911985024c87b4.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/Ground.material" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Size" value="1024" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="550">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="StatueWithLamp" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-5.44211 2.20935 13.792" />
+			<attribute name="Rotation" value="0.053614 0 0.998562 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2157">
+				<attribute name="Model" value="Model;c955fa499ca7765ec987e26734ab345f.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/StatueLamp.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="551">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="StatueWithLamp" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="3.01594 0.448686 11.6782" />
+			<attribute name="Rotation" value="-0.291979 0 0.956425 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2158">
+				<attribute name="Model" value="Model;c955fa499ca7765ec987e26734ab345f.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/StatueLamp.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="552">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="T" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-2.83954 0.591286 11.6887" />
+			<attribute name="Rotation" value="0.859541 0 -0.511067 0" />
+			<attribute name="Scale" value="2 2 2" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2159">
+				<attribute name="Model" value="Model;dbd5159477cd57394cb82ddd56ad04b1.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/PipeT.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="553">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="U" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-6.23676 0.618232 11.378" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2160">
+				<attribute name="Model" value="Model;3adb69e7194e6de70289c73732564c2c.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/PipeU.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="554">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="Y" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-1.5329 0.58768 10.6752" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2161">
+				<attribute name="Model" value="Model;f6c768a45362b602079f6849d7271245.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/PipeY.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="555">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="barrier" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-5.17417 0.390517 11.131" />
+			<attribute name="Rotation" value="0.940849 0 -0.338825 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2162">
+				<attribute name="Model" value="Model;98bae805609c3aa6c5744a03bac6e8a6.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_barrierdefault.material" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="556">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="palm_straight" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="1.34885 0.340587 8.35821" />
+			<attribute name="Rotation" value="0.763307 0 -0.646036 0" />
+			<attribute name="Scale" value="2 2 2" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2163">
+				<attribute name="Model" value="Model;8f065eb9da3cb03bcca7a5405f671eb6.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_palm_straightdefault.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="557">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="palm_straight" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-0.564001 0.266522 11.0063" />
+			<attribute name="Rotation" value="0.763307 0 -0.646036 0" />
+			<attribute name="Scale" value="2 2 2" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2164">
+				<attribute name="Model" value="Model;8f065eb9da3cb03bcca7a5405f671eb6.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_palm_straightdefault.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="558">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="palm_straight" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="2.66143 0.266522 10.4658" />
+			<attribute name="Rotation" value="0.763307 0 -0.646036 0" />
+			<attribute name="Scale" value="2 2 2" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2165">
+				<attribute name="Model" value="Model;8f065eb9da3cb03bcca7a5405f671eb6.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_palm_straightdefault.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="559">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="cube" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="2.31836 0.30562 14.2771" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="3 3 3" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2166">
+				<attribute name="Model" value="Model;30245c0570c96a95a40e1d9f0ee2ee81.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_cubedefault.material" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="560">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="cube" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-5.37299 0.30562 14.2771" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="3 3 3" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2167">
+				<attribute name="Model" value="Model;30245c0570c96a95a40e1d9f0ee2ee81.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_cubedefault.material" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="561">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="hedra" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-0.700359 0.390998 13.4899" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2168">
+				<attribute name="Model" value="Model;3aa8eff62586e30518b0aa8c54d8ebbc.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_hedradefault.material" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="562">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="reinforced_pillar" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="-3.41271 0.464848 8.10643" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2169">
+				<attribute name="Model" value="Model;594aae20c01624258db8ab6a62d0851c.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_reinforced_pillardefault.material" />
+				<attribute name="Cast Shadows" value="true" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="563">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="wall" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="2.3108 2.16558 14.3315" />
+			<attribute name="Rotation" value="0.999713 0 -0.0239446 0" />
+			<attribute name="Scale" value="0.5 0.5 0.5" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2170">
+				<attribute name="Model" value="Model;3a355752e1e005ca5c1347340669eaa7.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_walldefault.material" />
+				<attribute name="Light Mask" value="0" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
+		<node id="564">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="wall" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0.60019 0.374863 15.1465" />
+			<attribute name="Rotation" value="0.968565 0 0.248762 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<component type="StaticModel" id="2171">
+				<attribute name="Model" value="Model;3a355752e1e005ca5c1347340669eaa7.mdl" />
+				<attribute name="Material" value="Material;Models/Materials/_walldefault.material" />
+				<attribute name="Light Mask" value="0" />
+				<attribute name="Geometry Enabled">
+					<variant type="Bool" value="true" />
+				</attribute>
+				<attribute name="Lightmap" value="true" />
+				<attribute name="Lightmap Tiling Offset" value="0 0 0 0" />
+			</component>
+		</node>
 	</node>
 </scene>
