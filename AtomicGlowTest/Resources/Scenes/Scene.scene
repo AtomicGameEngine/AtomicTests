@@ -5,8 +5,8 @@
 	<attribute name="Smoothing Constant" value="50" />
 	<attribute name="Snap Threshold" value="5" />
 	<attribute name="Elapsed Time" value="0" />
-	<attribute name="Next Replicated Node ID" value="596" />
-	<attribute name="Next Replicated Component ID" value="2202" />
+	<attribute name="Next Replicated Node ID" value="598" />
+	<attribute name="Next Replicated Component ID" value="2204" />
 	<attribute name="Next Local Node ID" value="16778496" />
 	<attribute name="Next Local Component ID" value="16777216" />
 	<attribute name="Variables" />
@@ -55,7 +55,7 @@
 		<component type="Zone" id="4">
 			<attribute name="Bounding Box Min" value="-10000 -10000 -10000" />
 			<attribute name="Bounding Box Max" value="10000 10000 10000" />
-			<attribute name="Ambient Color" value="0 0 0 1" />
+			<attribute name="Ambient Color" value="0.691983 0.691983 0.691983 1" />
 		</component>
 	</node>
 	<node id="485">
