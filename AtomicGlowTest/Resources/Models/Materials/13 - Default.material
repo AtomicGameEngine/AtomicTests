@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<material>
+	<technique name="Techniques/Diff.xml" />
+	<texture unit="diffuse" name="Textures/diffuse.tga" />
+	<parameter name="MatDiffColor" value="0.588235 0.588235 0.588235 1" />
+	<parameter name="MatSpecColor" value="0 0 0 2" />
+	<parameter name="MatEmissiveColor" value="0 0 0 1" />
+</material>
